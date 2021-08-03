@@ -1,4 +1,4 @@
-//Arrays and Objects
+//Arrays,Objects,Tuples and Enum
 
 // const person: {
 //   name: string;
@@ -7,16 +7,29 @@
 //   name: "Antor",
 //   age: 30,
 // };
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-} = {
+// const person: {
+//   name: string;
+//   age: number;
+//   hobbies: string[];
+//   role: [number, string];
+// } = {
+//   name: "Antor",
+//   age: 30,
+//   hobbies: ["Sports", "Coding"],
+//   role: [2, "author"],
+// };
+
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
+
+const person = {
   name: "Antor",
   age: 30,
   hobbies: ["Sports", "Coding"],
-  role: [2, "author"],
+  role: Role.ADMIN,
 };
 
 let favaouriteActivites: string[];
