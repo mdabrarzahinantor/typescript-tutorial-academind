@@ -20,7 +20,7 @@
 // };
 
 enum Role {
-  ADMIN,
+  ADMIN = 10,
   READ_ONLY,
   AUTHOR,
 }
